@@ -1,0 +1,181 @@
+nav {
+  padding: 0 20px;
+}
+
+.nav-wrapper .brand-logo img {
+    height: 64px;
+}
+
+.side-nav {
+  transform: translateX(0px);
+}
+
+.side-nav > li.navLinks:first-of-type {
+  margin-top: 400px;
+}
+
+.side-nav .userView {
+  padding: 0;
+}
+
+.side-nav .userView .avatar {
+    height: 150px;
+    width: 150px;
+    margin: 100px auto 0;
+}
+
+ul.side-nav.fixed ul.collapsible-accordion a.collapsible-header {
+    padding: 0 80px;
+    clear: both;
+}
+
+.side-nav .collapsible-body {
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    transition: max-height 300ms ease-out;
+    transition: max-height 300ms ease-in;
+}
+
+.side-nav .collapsible-body, .side-nav.fixed .collapsible-body {
+    background: rgba(0, 0, 0, 0.0);
+}
+
+ul.side-nav.fixed ul.collapsible-accordion .collapsible-body li a {
+    font-weight: 400;
+    padding: 0 37.5px 0 95px;
+}
+
+.side-nav .collapsible-body li a, .side-nav.fixed .collapsible-body li a {
+    padding: 0 23.5px 0 31px;
+}
+
+ul.side-nav.fixed li > a {
+    font-size: 13px;
+    line-height: 44px;
+    height: 44px;
+    padding: 0 80px;
+}
+
+.bold > a {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 992px)
+.side-nav a {
+    padding: 0 16px;
+}
+
+/* MENU COMPONENT */
+
+ul.menu {
+  background-color: #212121;
+  padding: 0;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23), 0 3px 6px rgba(0,0,0,0.16);
+}
+
+ul.menu .list-header {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+ul.menu .list-header .logo {
+  padding-top: 35px;
+}
+
+ul.menu .list-header .logo img {
+  width: 110px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+ul.menu .list-header .title {
+  position: relative;
+  top: 20px;
+  font-size: 1.5rem;
+  color: #e0e0e0;
+}
+
+ul.menu > li:first-of-type {
+  margin-top: 80px;
+}
+
+ul.menu > li:last-of-type {
+  border-bottom: 1px solid #444;
+}
+
+ul.menu li {
+  min-height: 40px;
+  border-top: 1px solid #444;
+  cursor: pointer;
+  position: relative;
+}
+
+ul.menu a {
+  color: #e0e0e0;
+  font-size: 1.05rem;
+  line-height: 40px;
+  display: block;
+  padding-left: 30px;
+}
+
+ul.menu a:hover, ul.menu li a.active {
+  background-color: #424242;
+  border-left: 4px solid #26a69a;
+  padding-left: 26px;
+}
+
+/* END MENU COMPONENT */
+
+/* MENU ACCORDION COMPONENT */
+
+ul.accordion {
+  background-color: #212121;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 500ms ease-in-out;
+}
+
+ul.accordion li {
+  min-height: 40px;
+  cursor: pointer;
+  border: 0;
+}
+
+ul.accordion > li:first-of-type {
+  margin-top: 20px;
+}
+
+ul.accordion > li:last-of-type {
+  margin-bottom: 20px;
+}
+
+ul.accordion a {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+  line-height: 40px;
+  padding-left: 45px;
+  display: table;
+  width: 100%;
+}
+
+ul.accordion a:hover, ul.accordion a.active {
+  padding-left: 41px;
+}
+
+ul.accordion a > i.material-icons {
+  width: 40px;
+  vertical-align: middle;
+  padding-bottom: 6px;
+}
+
+/* END MENU ACCORDION COMPONENT */
